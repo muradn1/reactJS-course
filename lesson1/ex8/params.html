@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            changePerson("koko",40);
+        }
+
+        function changePerson(_name,_age){
+            id_h2.innerHTML = _name;
+            id_span.innerHTML = _age;
+        }
+
+        function changePerson1(e){
+            changePerson("trump",72);
+        }
+
+        function changePerson2(e){
+            changePerson("bush",75);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changePerson1()">person 1</button>
+    <button onclick="changePerson2()">person 2</button>
+    <button>person 3</button>
+    <h2 id="id_h2"></h2>
+    <h3>Age:<span id="id_span"></span></h3>
+    
+</body>
+</html>
