@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // var fruits_ar = new Array("apple","banana","kiwi","orange");
+        var fruits_ar = ["apple","banana","kiwi","orange","pineapple"];
+
+        window.onload = function(){
+            //fruits_ar[4] = "melon";
+            // fruits_ar.push("melon"); // מוסיף תא בסוף המערך
+             fruits_ar.unshift("grapes"); // דוחף תא בהתחלה של המערך ודוחף את האחרים קדימה
+
+            // fruits_ar.pop() // מוחק את התא האחרון
+            //fruits_ar.shift() // מעיף את התא הראשון במערך 
+           // fruits_ar.splice(3,1); // מעיף את תא 3 ורק אותו כי כתוב 1
+           let searchOrange = fruits_ar.indexOf("orange");
+           console.log("search orange",searchOrange); 
+           fruits_ar.splice(searchOrange, 0 , "mango");
+
+
+            console.log(fruits_ar);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
