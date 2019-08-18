@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var score;
+        var lives;
+        var user;
+    window.onload = function(){
+        resetApp();
+    }
+
+    function resetApp(){
+        score = 100;
+        lives = 5;
+        user = "mario";
+
+        id_score.innerHTML = score;
+        id_lives.innerHTML = lives;
+        id_name.innerHTML = user;
+    }
+
+    function add10Points(){
+        score += 10;
+        id_score.innerHTML = score;
+    }
+    </script>
+</head>
+<body>
+    <h2>Score: <span id="id_score"></span></h2>
+    <h2>Lives: <span id="id_lives"></span></h2>
+    <h2>Name: <span id="id_name"></span></h2>
+    <br>
+    <button onclick="add10Points()">add 10 points</button>
+</body>
+</html>
