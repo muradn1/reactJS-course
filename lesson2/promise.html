@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let user = "koko"
+        let prom = new Promise(function (resolve, reject) {
+            if(user == "koko"){
+                resolve(user);
+            }
+            else{
+                reject("error");
+            }
+        })
+
+        window.onload = function(){
+            prom
+            .then(_val => {
+                document.body.innerHTML = _val
+            })
+            .catch(_err => {
+                alert(_err);
+            })
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
