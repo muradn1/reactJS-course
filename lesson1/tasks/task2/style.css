@@ -1,0 +1,31 @@
+.label{
+    margin-top: 5px;
+}
+
+button{
+    margin-top:10px;
+}
+
+#id_tasks{
+    margin-top: 10px;
+}
+
+.task {
+    width: 200px;
+    border: black solid 1.1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-left: black solid 1.1px;
+}
+
+.time {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}

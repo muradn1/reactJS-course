@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<script>
+    class TaskClass {
+
+        constructor(name, time, parent) {
+            this.name = name;
+            this.time = time;
+            this.parent = parent;
+
+            id_tasks.innerHTML += `<div class="task"><span class="time">${this.time}</span><span class="name">${this.name}</span></div>`;
+        }
+
+        
+    }
+
+    function addTask() {
+        task = new TaskClass(id_name_input.value, id_time_input.value);
+    }
+
+</script>
+
+<body>
+
+    <div class="label">שם משימה</div>
+    <input id="id_name_input" type="text">
+
+    <div class="label">שעת משימה</div>
+    <input id="id_time_input" type="time">
+
+    <br>
+    <button onclick="addTask()">הוסף משימה</button>
+
+
+    <div id="id_tasks"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body{
+    background: silver;
+}
+
+.row{
+    min-height: inherit;
+}
+
+img{
+    min-height: 100px;
+}
