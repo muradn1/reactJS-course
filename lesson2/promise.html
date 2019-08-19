@@ -9,22 +9,22 @@
     <script>
         let user = "koko"
         let prom = new Promise(function (resolve, reject) {
-            if(user == "koko"){
+            if (user == "koko") {
                 resolve(user);
             }
-            else{
+            else {
                 reject("error");
             }
         })
 
-        window.onload = function(){
+        window.onload = function () {
             prom
-            .then(_val => {
-                document.body.innerHTML = _val
-            })
-            .catch(_err => {
-                alert(_err);
-            })
+                .then(_val => {
+                    document.body.innerHTML = _val
+                })
+                .catch(_err => {
+                    alert(_err);
+                })
 
         }
     </script>
