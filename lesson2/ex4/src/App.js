@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './bootstrap.min.css'
-import Clock from './comps/clock'
-import UserInput from './comps/userInput'
+import Vip from "./comps/vip"
 
 /*stateful component */
 class App extends Component {
@@ -19,10 +18,9 @@ class App extends Component {
     return (
       <div className="App container">
         <div className="row justify-content-center">
-          <Clock time={this.state.deadline} />
+          <Vip />
         </div>
         <div className="row justify-content-center">
-          <UserInput changeDate={this.changeDateApp} />
         </div>
       </div>
     )
