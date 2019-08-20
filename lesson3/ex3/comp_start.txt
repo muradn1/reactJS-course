@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Clock extends Component {
+class Header extends Component {
     render() {
         return (
             <div>
-                Clock work
+                Header work
             </div>
         )
     }
 }
 
-export default Clock;
+export default Header;

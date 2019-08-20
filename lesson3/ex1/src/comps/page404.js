@@ -1,16 +1,14 @@
 import React,{Component} from 'react';
 
-class Header extends Component{
-    user = "moshe";
-
+class Page404 extends Component{
     render(){
         return(
             <div>
-                Header work {this.user}
+                Page404 error go home!
             </div>
         )
     }
 }
 
 
-export default Header;
+export default Page404;

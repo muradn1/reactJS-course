@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './bootstrap.min.css'
 import Header from './comps/header';
+import { BrowserRouter as Router, Switch, Route ,Link } from 'react-router-dom';
 
 /*stateful component */
 class App extends Component {

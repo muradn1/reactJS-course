@@ -1,16 +1,14 @@
 import React,{Component} from 'react';
 
-class Header extends Component{
-    user = "moshe";
-
+class Page2 extends Component{
     render(){
         return(
             <div>
-                Header work {this.user}
+                <h2>Page2 work</h2>
             </div>
         )
     }
 }
 
 
-export default Header;
+export default Page2;
