@@ -15,7 +15,7 @@ class Coins extends Component {
         let myUrl = "https://api.coinmarketcap.com/v1/ticker/?limit=10";
         let response = await fetch(myUrl);
         let data = await response.json();
-
+        
         this.setState({ data_ar: data });
     }
 
@@ -55,8 +55,11 @@ class Coin extends Component {
     }
     
     render() {
+        const imgSrc = `https://files.coinmarketcap.com/static/widget/coins_legacy/64x64/${this.state.coin.id}.png`;
+
         return (
             <div className="coin col-12 border" onClick={this.coinClicked}>
+                <img src={imgSrc} />
                 <h2>{this.state.coin.name}</h2>
                 <div>Value: {this.state.coin.price_usd} USD</div>
                 <button onClick={this.followClicked} className="btn btn-info">follow</button>
