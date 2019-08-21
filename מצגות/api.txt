@@ -1,0 +1,11 @@
+https://api.coinmarketcap.com/v1/ticker/?limit=10
+
+תמונות למטבעות
+https://files.coinmarketcap.com/static/widget/coins_legacy/64x64/bitcoin.png
+
+// people
+https://randomuser.me/api/?results=10&seed=abc
+
+
+// מטבעות אמיתיים דולר,יורו ועוד כמה דברים
+http://apilayer.net/api/live?access_key=3c81786f9b3d2e267f40d08af97b97f2&currencies=usd,ils,eur,btc,thb
